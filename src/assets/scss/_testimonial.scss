@@ -1,0 +1,64 @@
+//testimonial-area
+.left-content {
+    width: calc(100% - 260px);
+    text-align: center;
+   & .client-img {
+       width: 250px !important;
+       display: inline-block !important;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+   }
+}
+.right-content {
+    width: 100%;
+    .text {
+        font-size: 20px;
+        color: $body-text-color;
+    }
+    & h4 {
+        color: $white;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    & h5 {
+        color: $body-text-color2;
+        font-weight: 500;
+    }
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    border: 1px solid $body-text-color !important;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    font-size: 25px !important;
+    &:hover {
+        color: $white;
+        background-color: $theme-color;
+        border-color: $theme-color !important;
+    }
+}
+
+.owl-slide {
+    button {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        &.owl-prev{
+            left: -55px;
+        }
+        &.owl-next{
+            right: -55px;
+        }
+    }
+}
+

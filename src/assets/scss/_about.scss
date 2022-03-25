@@ -1,0 +1,31 @@
+//about__me
+.about__me {
+    & h3 {
+        color: $white;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    & h5 {
+        color: $white;
+        margin-bottom: 25px;
+    }
+}
+.short-desc {
+    border-top: 1px solid $body-text-color;
+    ul {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        li {
+            font-size: 18px;
+            color: $white;
+            font-family: $assistant;
+            font-weight: 400;
+            padding-bottom: 15px;
+            
+            & span {
+                color: $body-text-color;
+            }
+        }
+    }
+}

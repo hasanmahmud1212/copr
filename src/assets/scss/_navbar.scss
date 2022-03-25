@@ -1,0 +1,80 @@
+.navbarArea {
+    // background: transparent;
+    padding: 15px 0;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    button.theme_btn {
+        border: 0;
+    }
+    &.nav-bg {
+        background: #fff;
+        .navbar-list li a {
+            color: #000;
+        }
+    }
+}
+
+.navbar-list {
+    li {
+        display: inline-block;
+        .active {
+            border-bottom: 3px solid red;
+        }
+        a {
+            color: $white;
+            display: inline-block;
+            font-size: 18px;
+            margin: 0 25px;
+            padding: 25px 0;
+            @media #{$laptop} {
+                margin: 0 20px;
+            }
+            @media #{$lg} {
+                margin: 0 9px;
+            }
+        }
+    }
+}
+.hambuger {
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+@media screen and (max-width: 991px) {
+    .hambuger {
+        display: block;
+    }
+    .navbar-list {
+        background-color: $white;
+        width: 100%;
+        padding-left: 0;
+        position: absolute;
+        z-index: 1;
+        left: -100%;
+        top: 0;
+        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        -ms-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        padding: 30px 0;
+        height: 100vh;
+        li {
+            display: block;
+
+            a {
+                color: $heding;
+                font-weight: 700;
+                font-size: 20px;
+                padding: 15px 0;
+                margin: 0;
+            }
+        }
+    }
+    .nav-active {
+        left: 0px;
+    }
+}
